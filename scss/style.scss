@@ -1,35 +1,63 @@
-@import "./normalize.scss";
+@import "./normalise.scss";
 
 $color-dark: #111111;
 $color-background-dark: #202024;
-$color-background-grey: #F6F6F6;
-$color-grey: #B4AFAF;
-$color-accent-purple: #4F2EE8;
-$color-light: #FFFFFF;
-
-
-
+$color-background-grey: #f6f6f6;
+$color-grey: #b4afaf;
+$color-accent-purple: #4f2ee8;
+$color-light: #ffffff;
 
 html {
-  box-sizing: border-box;
-  font-size: 16px;
+    box-sizing: border-box;
+    font-size: 16px;
 }
-
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 * {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 @font-face {
-    font-family: 'DM Sans', sans-serif;
-    src: url("../fonts/DMSans-Regular.ttf"),
-    url("../fonts/DMSans-Italic.ttf"),
-    url("../fonts/DMSans-Medium.ttf"),
-    url("../fonts/DMSans-Bold.ttf");
+    font-family: "DM Sans", sans-serif;
+    src: url("../fonts/DMSans-Regular.ttf"), url("../fonts/DMSans-Italic.ttf"), url("../fonts/DMSans-Medium.ttf"),
+        url("../fonts/DMSans-Bold.ttf");
+}
+
+
+body{
+    font-family: "DM Sans", sans-serif;
+    background-color: $color-background-grey;
+    color: $color-dark;
+}
+
+
+// COMPONENTS
+
+.button {
+    padding: 14px 28px;
+
+    background-color: inherit;
+    border: 2px solid $color-accent-purple;
+    border-radius: 40px;
+
+    color: $color-dark;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.button:hover, .button:focus{
+    background-color: $color-accent-purple;
+    color: $color-light;
+}
+
+.dark-theme{
+    background-color: $color-background-dark;
+    color: $color-light;
 }
