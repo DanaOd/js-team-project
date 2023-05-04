@@ -107,6 +107,7 @@ body {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  transition: all 400ms ease-out;
 }
 
 .button:hover, .button:focus {
